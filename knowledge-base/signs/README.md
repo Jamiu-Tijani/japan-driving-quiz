@@ -1,0 +1,1 @@
+Sign entries should have: `id`, `japaneseName`, `englishName`, `sourceId`, `sourceLocation`, `vehicleApplicability`, `exceptions`, `supplementaryPlates`, `assetPath`, `assetLicense`, `reviewStatus`. The current quiz has not yet been migrated into this verified catalogue.
