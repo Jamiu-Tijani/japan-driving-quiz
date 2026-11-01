@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "verificationStatus": "needs_review",
+  "sources": [
+    {
+      "id": "mlit-signs",
+      "name": "MLIT Japanese road signs catalogue",
+      "url": "https://www.mlit.go.jp/road/sign/sign/",
+      "role": "sign catalogue",
+      "lastVerified": null
+    },
+    {
+      "id": "npa-traffic",
+      "name": "National Police Agency traffic information",
+      "url": "https://www.npa.go.jp/english/bureau/traffic/",
+      "role": "traffic context",
+      "lastVerified": null
+    },
+    {
+      "id": "koyama-subject",
+      "name": "Koyama English subject textbook",
+      "role": "textbook lesson mapping",
+      "edition": null,
+      "lastVerified": null,
+      "status": "awaiting user edition"
+    }
+  ]
+}
