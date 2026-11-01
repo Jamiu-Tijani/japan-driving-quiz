@@ -20,7 +20,7 @@ document.getElementById('quizTab').onclick=()=>{filter='all';start()};document.g
 const situations=[
 {name:"No entry",code:"303",desc:"A No Entry sign faces you at the entrance to the road ahead. Draw a route to the left or right instead.",allowed:["left","right"]},
 {name:"Stop",code:"330-A",desc:"A STOP sign faces you. Draw a route, then consider what you must do before crossing the stop line.",allowed:["left","right","straight"],stop:true},
-{name:"One-way",code:"326-B",desc:"A one-way sign points forward. Draw your route in this simple intersection.",allowed:["straight"],note:"Here the scenario expressly requires following the sign arrow straight; actual road layout and supplemental signs control real movements."}
+{name:"One-way",code:"326-B",desc:"This sign indicates the permitted direction of travel along the signed road, not necessarily a ban on turning at the intersection. Explore different exits.",allowed:["straight","left","right"],note:"The one-way rule controls traffic direction on the signed road. Whether each turn is allowed depends on further signs, signals and road layout."}
 ];let sit=0;
 function road(){
 const s=situations[sit];
