@@ -1,0 +1,486 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "notes": "Migrated from legacy quiz; all explanations and permissions require source-by-source verification before certification.",
+  "signs": [
+    {
+      "id": "sign-001",
+      "legacyIndex": 0,
+      "ja": "止まれ",
+      "en": "STOP",
+      "illustration": "🛑",
+      "explanation": "Stop completely before the stop line, then check safety.",
+      "options": [
+        "Stop fully",
+        "Slow only",
+        "Stop only if cars approach",
+        "Sound horn"
+      ],
+      "correctIndex": 0,
+      "category": "action",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": "330-A"
+    },
+    {
+      "id": "sign-002",
+      "legacyIndex": 1,
+      "ja": "徐行",
+      "en": "SLOW",
+      "illustration": "▽",
+      "explanation": "Proceed slowly enough to stop immediately.",
+      "options": [
+        "Maintain speed",
+        "Proceed at a very low speed",
+        "Stop for 10 seconds",
+        "Accelerate"
+      ],
+      "correctIndex": 1,
+      "category": "action",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-003",
+      "legacyIndex": 2,
+      "ja": "車両進入禁止",
+      "en": "NO ENTRY",
+      "illustration": "⛔",
+      "explanation": "Vehicles must not enter from this direction.",
+      "options": [
+        "Enter if clear",
+        "Only motorcycles may enter",
+        "Do not enter",
+        "Enter after stopping"
+      ],
+      "correctIndex": 2,
+      "category": "route",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": "303"
+    },
+    {
+      "id": "sign-004",
+      "legacyIndex": 3,
+      "ja": "一方通行",
+      "en": "ONE WAY",
+      "illustration": "⬆️",
+      "explanation": "Traffic may travel only in the arrow's direction (subject to any supplementary plates).",
+      "options": [
+        "Drive only in arrow direction",
+        "Drive either way",
+        "Turn around anywhere",
+        "Overtake freely"
+      ],
+      "correctIndex": 0,
+      "category": "route",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": "326-B"
+    },
+    {
+      "id": "sign-005",
+      "legacyIndex": 4,
+      "ja": "指定方向外進行禁止",
+      "en": "STRAIGHT ONLY",
+      "illustration": "⬆",
+      "explanation": "At the intersection, proceed only in the direction indicated.",
+      "options": [
+        "Right turn permitted",
+        "Left turn permitted",
+        "U-turn required",
+        "Go straight only"
+      ],
+      "correctIndex": 3,
+      "category": "route",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-006",
+      "legacyIndex": 5,
+      "ja": "指定方向外進行禁止",
+      "en": "LEFT TURN ONLY",
+      "illustration": "⬅",
+      "explanation": "Follow the indicated direction at the intersection.",
+      "options": [
+        "Straight only",
+        "Left turn only",
+        "Right turn only",
+        "Any direction"
+      ],
+      "correctIndex": 1,
+      "category": "route",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-007",
+      "legacyIndex": 6,
+      "ja": "転回禁止",
+      "en": "NO U-TURN",
+      "illustration": "↩️✕",
+      "explanation": "A U-turn is prohibited; other movements are controlled by other signs and rules.",
+      "options": [
+        "All turns banned",
+        "Only overtaking banned",
+        "Do not make a U-turn",
+        "Road closed"
+      ],
+      "correctIndex": 2,
+      "category": "route",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-008",
+      "legacyIndex": 7,
+      "ja": "駐車禁止",
+      "en": "NO PARKING",
+      "illustration": "🅿️✕",
+      "explanation": "Parking is prohibited; stopping may still be allowed unless another rule prohibits it.",
+      "options": [
+        "No parking",
+        "No stopping ever",
+        "Bus parking only",
+        "Parking at night only"
+      ],
+      "correctIndex": 0,
+      "category": "action",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-009",
+      "legacyIndex": 8,
+      "ja": "駐停車禁止",
+      "en": "NO STOPPING OR PARKING",
+      "illustration": "✕",
+      "explanation": "Neither stopping nor parking is permitted except where the law provides an exception.",
+      "options": [
+        "Parking prohibited but stopping allowed",
+        "No stopping or parking",
+        "Free parking",
+        "Stop for loading"
+      ],
+      "correctIndex": 1,
+      "category": "action",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-010",
+      "legacyIndex": 9,
+      "ja": "最高速度",
+      "en": "MAX SPEED 40 km/h",
+      "illustration": "40",
+      "explanation": "Do not exceed the posted maximum speed.",
+      "options": [
+        "Minimum speed 40",
+        "Recommended speed 40",
+        "Maximum speed 40",
+        "Speed limit ends"
+      ],
+      "correctIndex": 2,
+      "category": "action",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-011",
+      "legacyIndex": 10,
+      "ja": "自転車及び歩行者専用",
+      "en": "BICYCLES AND PEDESTRIANS ONLY",
+      "illustration": "🚲🚶",
+      "explanation": "This path is reserved for bicycles and pedestrians, subject to applicable exceptions.",
+      "options": [
+        "Ordinary passenger cars",
+        "Large trucks",
+        "Motorcycles",
+        "Bicycles and pedestrians"
+      ],
+      "correctIndex": 3,
+      "category": "vehicle",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-012",
+      "legacyIndex": 11,
+      "ja": "歩行者専用",
+      "en": "PEDESTRIANS ONLY",
+      "illustration": "🚶",
+      "explanation": "Ordinary motor vehicles are not permitted on this pedestrian-only road.",
+      "options": [
+        "Pedestrians",
+        "Passenger cars",
+        "Mopeds",
+        "Trucks"
+      ],
+      "correctIndex": 0,
+      "category": "vehicle",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-013",
+      "legacyIndex": 12,
+      "ja": "車両通行止め",
+      "en": "ROAD CLOSED TO VEHICLES",
+      "illustration": "🚫🚗",
+      "explanation": "Vehicles are prohibited from using this road, subject to exceptions indicated by law or supplementary plates.",
+      "options": [
+        "Any private car can enter",
+        "Do not enter with a vehicle",
+        "Only trucks can enter",
+        "Proceed at 10 km/h"
+      ],
+      "correctIndex": 1,
+      "category": "vehicle",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-014",
+      "legacyIndex": 13,
+      "ja": "大型貨物自動車等通行止め",
+      "en": "NO LARGE GOODS VEHICLES",
+      "illustration": "🚚✕",
+      "explanation": "The restriction applies to designated classes of large goods vehicles.",
+      "options": [
+        "All pedestrians",
+        "Bicycles only",
+        "Designated large goods vehicles",
+        "All vehicles"
+      ],
+      "correctIndex": 2,
+      "category": "vehicle",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-015",
+      "legacyIndex": 14,
+      "ja": "自動二輪車及び原動機付自転車通行止め",
+      "en": "NO MOTORCYCLES / MOPEDS",
+      "illustration": "🏍️✕",
+      "explanation": "Motorcycles and mopeds covered by the sign may not enter.",
+      "options": [
+        "Bicycles only",
+        "Motorcycles and mopeds",
+        "All passenger cars",
+        "Pedestrians only"
+      ],
+      "correctIndex": 1,
+      "category": "vehicle",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-016",
+      "legacyIndex": 15,
+      "ja": "追越しのための右側部分はみ出し通行禁止",
+      "en": "NO CROSSING RIGHT SIDE TO OVERTAKE",
+      "illustration": "│🟨│",
+      "explanation": "Do not cross into the right-hand side of the road to overtake.",
+      "options": [
+        "Cross to overtake",
+        "Cross whenever no traffic",
+        "Do not cross to overtake",
+        "Overtake only at night"
+      ],
+      "correctIndex": 2,
+      "category": "route",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-017",
+      "legacyIndex": 16,
+      "ja": "横断歩道",
+      "en": "PEDESTRIAN CROSSING",
+      "illustration": "🚶‍➡️",
+      "explanation": "At a crossing without traffic signals, yield to pedestrians crossing or about to cross; stop as required.",
+      "options": [
+        "Accelerate",
+        "Yield and stop as required",
+        "Sound horn first",
+        "Always reverse"
+      ],
+      "correctIndex": 1,
+      "category": "action",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-018",
+      "legacyIndex": 17,
+      "ja": "踏切あり",
+      "en": "RAILWAY CROSSING AHEAD",
+      "illustration": "🚆",
+      "explanation": "Approach carefully. At a railway crossing, follow stop-and-safety-check rules unless an applicable exception applies.",
+      "options": [
+        "Ignore tracks",
+        "Accelerate through",
+        "Park on tracks",
+        "Prepare to check crossing safety"
+      ],
+      "correctIndex": 3,
+      "category": "action",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-019",
+      "legacyIndex": 18,
+      "ja": "学校、幼稚園、保育所等あり",
+      "en": "SCHOOL / CHILDREN AHEAD",
+      "illustration": "🏫",
+      "explanation": "Be alert for children and adjust your driving to conditions.",
+      "options": [
+        "Increase vigilance",
+        "Assume no pedestrians",
+        "Drive at maximum speed",
+        "Use the shoulder"
+      ],
+      "correctIndex": 0,
+      "category": "action",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    },
+    {
+      "id": "sign-020",
+      "legacyIndex": 19,
+      "ja": "車線数減少",
+      "en": "LANES REDUCE",
+      "illustration": "⇢│",
+      "explanation": "A lane reduction is ahead: prepare to merge safely.",
+      "options": [
+        "Accelerate across lines",
+        "Stop in all cases",
+        "Prepare for a safe merge",
+        "Reverse immediately"
+      ],
+      "correctIndex": 2,
+      "category": "route",
+      "sourceIds": [
+        "mlit-signs",
+        "npa-traffic"
+      ],
+      "reviewStatus": "draft-unverified",
+      "asset": null
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "intersection-no-entry",
+      "name": "No entry",
+      "signId": "sign-003",
+      "desc": "A No Entry sign faces you at the entrance to the road ahead. Draw a route to the left or right instead.",
+      "allowed": [
+        "left",
+        "right"
+      ],
+      "reviewStatus": "prototype-unverified"
+    },
+    {
+      "id": "intersection-stop",
+      "name": "Stop",
+      "signId": "sign-001",
+      "desc": "A STOP sign faces you. Draw a route, then consider what you must do before crossing the stop line.",
+      "allowed": [
+        "left",
+        "right",
+        "straight"
+      ],
+      "stop": true,
+      "reviewStatus": "prototype-unverified"
+    },
+    {
+      "id": "intersection-one-way",
+      "name": "One-way",
+      "signId": "sign-004",
+      "desc": "This sign indicates the permitted direction of travel along the signed road, not necessarily a ban on turning at the intersection. Explore different exits.",
+      "allowed": [
+        "straight",
+        "left",
+        "right"
+      ],
+      "note": "The one-way rule controls traffic direction on the signed road. Whether each turn is allowed depends on other controls.",
+      "reviewStatus": "prototype-unverified"
+    }
+  ]
+}
