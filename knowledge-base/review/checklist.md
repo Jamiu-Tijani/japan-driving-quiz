@@ -1,0 +1,5 @@
+- [ ] Confirm official artwork and licenses
+- [ ] Verify sign direction/orientation and applicable vehicle classes
+- [ ] Verify road marking rules and exceptions
+- [ ] Confirm Koyama textbook edition and page mapping
+- [ ] Review all questions and route scenarios before calling them exam-aligned
