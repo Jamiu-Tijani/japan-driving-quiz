@@ -1,0 +1,14 @@
+{
+  "name": "japan-driving-quiz",
+  "private": true,
+  "version": "0.2.0-dev",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
