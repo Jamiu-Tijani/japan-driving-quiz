@@ -1,0 +1,1 @@
+Each scenario should define road geometry, sign position/orientation, approach direction, vehicle class, applicable rules, required actions and expected outcomes. Distinguish a route-geometry verdict from a full legal-driving verdict.
