@@ -18,7 +18,7 @@ function staysOnRoad(path:Polyline,s:RoadScenario,step=2):boolean{
 }
 export function evaluateRoute({scenario:s,vehicle,path,actions=[]}:EvaluationInput):EvaluationResult{
  const violations:Violation[]=[];
- if(s.reviewStatus!=='verified')return {status:'unverified',violations:[{kind:'unverified_scenario',message:'Scenario rules have not been independently verified.'}]};
+ const isDraft=s.reviewStatus!=='verified';
  if(path.length<2||path.some(p=>!finite(p))||path.slice(1).every((p,i)=>same(p,path[i])))return {status:'incomplete',violations:[{kind:'invalid_path',message:'Draw a non-empty route with valid coordinates.'}]};
  if(!staysOnRoad(path,s))violations.push({kind:'off_road',message:'Path leaves the drivable scene.'});
  for(const b of s.boundaries.filter(b=>b.crossing==='forbidden'))if(hits(path,b.from,b.to))violations.push({kind:'forbidden_crossing',message:'Route crosses a prohibited boundary.',ruleId:b.ruleId,at:midpoint(b.from,b.to)});
@@ -28,5 +28,6 @@ export function evaluateRoute({scenario:s,vehicle,path,actions=[]}:EvaluationInp
  if(!entry||!exit)return {status:'incomplete',violations:[...violations,{kind:'invalid_path',message:'Route must cross a defined entry and exit gate.'}]};
  for(const g of [entry,exit])if(g.permittedVehicles&&!g.permittedVehicles.includes(vehicle))violations.push({kind:'restricted_gate',message:'This vehicle type is not permitted through gate '+g.id,ruleId:g.ruleId});
  for(const requirement of s.requirements)if(!actions.some(a=>a.kind===requirement.type))violations.push({kind:'missing_action',message:'Required action is missing: '+requirement.type,ruleId:requirement.ruleId});
+ if(isDraft)return {status:'unverified',violations:[...violations,{kind:'unverified_scenario',message:'This is a draft scenario. Geometry feedback is provisional; full driving legality is not verified.'}],entryGateId:entry.id,exitGateId:exit.id};
  return {status:violations.length?'invalid':'valid',violations,entryGateId:entry.id,exitGateId:exit.id};
 }
