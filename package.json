@@ -5,10 +5,14 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dev": "vite --host",
+    "build": "vite build && node scripts/copy-knowledge-base.mjs",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "vite": "^7.1.0"
   }
 }
